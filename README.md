@@ -137,5 +137,3 @@ This is an open-source project intended to bring joy and music to people, and en
 Product names and images are used solely for the purpose of identifying the specific products related to DAWs, iOS hosts, synthesizers, sampling, sound design, and music making. Use of these names and images does not imply any cooperation or endorsement. 
 
 This Readme text does not constitute legal advice. We take no responsibility for any actions resulting from using this code. 
-
-![](https://i.imgur.com/F60TLaW.png)
