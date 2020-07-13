@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CVv-af-Tn2">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arian LT Bold.ttf">
+            <string>ArianLT-Bold</string>
+        </array>
+        <array key="Arian LT.ttf">
+            <string>ArianLT-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Parent Controller-->
+        <scene sceneID="DCE-54-dOc">
+            <objects>
+                <viewController storyboardIdentifier="ParentController" id="CVv-af-Tn2" customClass="ParentController" customModule="AUv3_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dEN-q9-y0y"/>
+                        <viewControllerLayoutGuide type="bottom" id="w9i-cf-rMB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lps-cZ-d2i">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeI-ta-G6M">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ghk-bH-EYU" userLabel="HeaderView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKP-eY-rvj">
+                                                <rect key="frame" x="12.5" y="1" width="999" height="53"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CVm-dQ-nLB">
+                                                        <rect key="frame" x="345" y="11" width="317" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkJ-az-c1I" userLabel="left button">
+                                                                <rect key="frame" x="0.0" y="5" width="32" height="26"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <state key="normal" image="left-arrow">
+                                                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <state key="highlighted" image="loading"/>
+                                                                <connections>
+                                                                    <action selector="leftPresetPressed" destination="CVv-af-Tn2" eventType="touchUpInside" id="qx1-94-PYa"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NfJ-uI-9tS">
+                                                                <rect key="frame" x="31" y="0.0" width="256" height="36"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAn-cT-Sdv" userLabel="right button">
+                                                                <rect key="frame" x="285" y="5" width="32" height="26"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <color key="tintColor" red="0.82352941180000006" green="0.45098039220000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" image="right-arrow">
+                                                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <state key="selected" image="spark.png"/>
+                                                                <state key="highlighted" image="loading"/>
+                                                                <connections>
+                                                                    <action selector="rightPresetPressed" destination="CVv-af-Tn2" eventType="touchUpInside" id="v47-1s-II7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.031372549019607843" green="0.031372549019607843" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ius-9l-yyi" customClass="TopNavButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="923" y="13" width="76" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="About">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNq-BA-gw6" customClass="PresetUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="670" y="13" width="36" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" image="saveDisk">
+                                                            <color key="titleColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUDIOKIT :)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQH-tM-GzP">
+                                                        <rect key="frame" x="4" y="15" width="120" height="26"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgZ-Hm-bJF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="53"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="173" id="aES-n7-2M6"/>
+                                                            <constraint firstAttribute="height" constant="53" id="ouY-WR-yQs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArianLT-Bold" family="Arian LT" pointSize="17"/>
+                                                        <connections>
+                                                            <action selector="AppNameTapped:" destination="CVv-af-Tn2" eventType="touchUpInside" id="acs-Se-J4Z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvE-DK-2G3" customClass="TopNavButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="177" y="13" width="76" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Main">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="do3-OE-Lqc" customClass="TopNavButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="261" y="13" width="76" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="More">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk8-fo-6eZ" customClass="NavButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="800" y="13" width="116" height="32"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.086274509803921567" green="0.086274509803921567" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="MIDI Assign">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="999" id="2zl-Xk-aPz"/>
+                                                    <constraint firstItem="zgZ-Hm-bJF" firstAttribute="top" secondItem="KKP-eY-rvj" secondAttribute="top" id="Fmy-ye-2cU"/>
+                                                    <constraint firstAttribute="height" constant="53" id="JOo-PT-3ws"/>
+                                                    <constraint firstItem="zgZ-Hm-bJF" firstAttribute="leading" secondItem="KKP-eY-rvj" secondAttribute="leading" id="aHd-Js-1gi"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="2DN-Fd-qim"/>
+                                            <constraint firstItem="KKP-eY-rvj" firstAttribute="centerX" secondItem="Ghk-bH-EYU" secondAttribute="centerX" id="4Ur-fv-a3r"/>
+                                            <constraint firstItem="KKP-eY-rvj" firstAttribute="top" secondItem="Ghk-bH-EYU" secondAttribute="top" constant="1" id="L2u-cm-LNj"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AP3-Vb-cAn">
+                                        <rect key="frame" x="0.0" y="60" width="1024" height="277"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="277" id="auJ-wD-IgT"/>
+                                            <constraint firstAttribute="width" constant="1024" id="lWC-q5-Uhw"/>
+                                        </constraints>
+                                    </containerView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxp-Ai-hgi" userLabel="Keyboard Container" customClass="KeyboardContainer" customModule="AUv3_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="337" width="1024" height="431"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnL-49-hPM" userLabel="background">
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="58"/>
+                                                <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="b0d-or-5e7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-q7-ae1" userLabel="Wheels View">
+                                                <rect key="frame" x="8" y="56" width="110" height="374"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwm-Bv-eNx" customClass="AKVerticalPad" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="6" y="5" width="44" height="343"/>
+                                                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="nXQ-Ow-vzc"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHt-hq-jlN" customClass="AKVerticalPad" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="58" y="5" width="44" height="343"/>
+                                                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="44" id="Xxu-ih-Q0C"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNI-RZ-HN4">
+                                                        <rect key="frame" x="8" y="350" width="39" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="39" id="Wcu-bH-1wa"/>
+                                                            <constraint firstAttribute="height" constant="22" id="e99-Wd-E2W"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mod" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SkF-an-gYQ">
+                                                        <rect key="frame" x="59" y="350" width="39" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="22" id="CtM-Vl-55P"/>
+                                                            <constraint firstAttribute="width" constant="39" id="Tia-Ty-sHt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="qwm-Bv-eNx" firstAttribute="top" secondItem="h6e-q7-ae1" secondAttribute="top" constant="5" id="SG7-fx-EZa"/>
+                                                    <constraint firstItem="qwm-Bv-eNx" firstAttribute="leading" secondItem="h6e-q7-ae1" secondAttribute="leading" constant="6" id="Xf9-SM-yNe"/>
+                                                    <constraint firstItem="tNI-RZ-HN4" firstAttribute="leading" secondItem="h6e-q7-ae1" secondAttribute="leading" constant="8" id="ax0-G7-eJK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tNI-RZ-HN4" secondAttribute="bottom" constant="2" id="dX1-fJ-QtH"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SkF-an-gYQ" secondAttribute="trailing" constant="12" id="f4H-9R-ZYf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SkF-an-gYQ" secondAttribute="bottom" constant="2" id="fgE-8b-gGH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IHt-hq-jlN" secondAttribute="bottom" constant="26" id="he0-LE-ZIQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qwm-Bv-eNx" secondAttribute="bottom" constant="26" id="oh3-sc-9ET"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IHt-hq-jlN" secondAttribute="trailing" constant="8" id="qfq-Ga-6CO"/>
+                                                    <constraint firstItem="IHt-hq-jlN" firstAttribute="top" secondItem="h6e-q7-ae1" secondAttribute="top" constant="5" id="v5y-Tt-lEQ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBI-eG-Zno">
+                                                <rect key="frame" x="14" y="11" width="996" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnD-tW-fVL" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Settings">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="Cf4-mW-kO5" kind="popoverPresentation" identifier="SegueToSettingsPopOver" popoverAnchorView="YnD-tW-fVL" id="a9f-pD-ohp">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                            </segue>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2m-CD-Nad" customClass="AKBluetoothMIDIButton" customModule="AudioKit">
+                                                        <rect key="frame" x="108" y="0.0" width="36" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" image="bluetooth">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fl-UW-Hge" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="152" y="0.0" width="56" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Keys">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="2vL-NN-Oe9" kind="popoverPresentation" identifier="SegueToKeySettingsPopOver" popoverAnchorView="7Fl-UW-Hge" id="xEE-1M-odg">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                            </segue>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvP-wu-mhC" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="216" y="0.0" width="83" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Velocity">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="BpL-Xj-nkV" kind="popoverPresentation" identifier="SegueToVelocityPopOver" popoverAnchorView="MvP-wu-mhC" id="ugJ-fw-AQC">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                            </segue>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6J-hr-bha" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="306" y="0.0" width="83" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Wheels">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="7o9-YU-BmX" kind="popoverPresentation" identifier="SegueToMod" popoverAnchorView="d6J-hr-bha" id="cHy-Lz-EgV">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                            </segue>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jod-4I-0RB" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="396" y="0.0" width="56" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Hold">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKB-70-VYh">
+                                                        <rect key="frame" x="681" y="0.0" width="56" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Link">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZZ-OG-paK" customClass="Stepper" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="888" y="0.0" width="108" height="36"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Octave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt3-QR-0RE">
+                                                        <rect key="frame" x="822" y="7" width="58" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-N1-Grn" customClass="PresetUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                        <rect key="frame" x="457" y="0.0" width="76" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <state key="normal" title="Panic">
+                                                            <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="996" id="9Rq-bt-XXU"/>
+                                                    <constraint firstAttribute="height" constant="36" id="v3Y-17-b96"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHC-fX-ytr" customClass="SynthKeyboard" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="118" y="55" width="898" height="376"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gnL-49-hPM" secondAttribute="trailing" id="8xh-so-FDE"/>
+                                            <constraint firstItem="SHC-fX-ytr" firstAttribute="top" secondItem="Rxp-Ai-hgi" secondAttribute="top" constant="55" id="9iJ-2q-DVk"/>
+                                            <constraint firstItem="SHC-fX-ytr" firstAttribute="leading" secondItem="Rxp-Ai-hgi" secondAttribute="leading" constant="118" id="FSS-6a-Phv"/>
+                                            <constraint firstAttribute="trailing" secondItem="SHC-fX-ytr" secondAttribute="trailing" constant="8" id="G9P-ay-9dx"/>
+                                            <constraint firstAttribute="bottom" secondItem="SHC-fX-ytr" secondAttribute="bottom" id="KJi-SM-RhC"/>
+                                            <constraint firstItem="gnL-49-hPM" firstAttribute="leading" secondItem="Rxp-Ai-hgi" secondAttribute="leading" id="cE2-0q-rfI"/>
+                                            <constraint firstItem="JBI-eG-Zno" firstAttribute="centerX" secondItem="Rxp-Ai-hgi" secondAttribute="centerX" id="cXF-bK-PwQ"/>
+                                            <constraint firstItem="SHC-fX-ytr" firstAttribute="leading" secondItem="h6e-q7-ae1" secondAttribute="trailing" id="dlM-Qa-sAK"/>
+                                            <constraint firstAttribute="bottom" secondItem="h6e-q7-ae1" secondAttribute="bottom" constant="1" id="hEK-Vd-eqf"/>
+                                            <constraint firstItem="h6e-q7-ae1" firstAttribute="top" secondItem="Rxp-Ai-hgi" secondAttribute="top" constant="56" id="l0R-J5-Byb"/>
+                                            <constraint firstItem="gnL-49-hPM" firstAttribute="top" secondItem="Rxp-Ai-hgi" secondAttribute="top" id="myS-b0-Nqy"/>
+                                            <constraint firstItem="JBI-eG-Zno" firstAttribute="top" secondItem="Rxp-Ai-hgi" secondAttribute="top" constant="11" id="tyv-y9-xEl"/>
+                                            <constraint firstItem="h6e-q7-ae1" firstAttribute="leading" secondItem="Rxp-Ai-hgi" secondAttribute="leading" constant="8" id="wud-2l-AhY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Rxp-Ai-hgi" secondAttribute="trailing" id="7xe-4D-Qae"/>
+                                    <constraint firstItem="Rxp-Ai-hgi" firstAttribute="centerX" secondItem="AP3-Vb-cAn" secondAttribute="centerX" id="DBt-65-etB"/>
+                                    <constraint firstItem="Rxp-Ai-hgi" firstAttribute="top" secondItem="qeI-ta-G6M" secondAttribute="top" constant="337" id="Duh-F6-3zd"/>
+                                    <constraint firstItem="Ghk-bH-EYU" firstAttribute="leading" secondItem="qeI-ta-G6M" secondAttribute="leading" id="GNM-47-YRZ"/>
+                                    <constraint firstItem="Ghk-bH-EYU" firstAttribute="top" secondItem="qeI-ta-G6M" secondAttribute="top" id="PMA-QS-N4j"/>
+                                    <constraint firstItem="AP3-Vb-cAn" firstAttribute="leading" secondItem="qeI-ta-G6M" secondAttribute="leading" id="RwH-Zn-RhT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rxp-Ai-hgi" secondAttribute="bottom" id="WQD-sg-k1a"/>
+                                    <constraint firstAttribute="height" constant="768" id="ayZ-Kq-hFL"/>
+                                    <constraint firstItem="Rxp-Ai-hgi" firstAttribute="leading" secondItem="qeI-ta-G6M" secondAttribute="leading" id="dqs-v1-7an"/>
+                                    <constraint firstItem="AP3-Vb-cAn" firstAttribute="top" secondItem="qeI-ta-G6M" secondAttribute="top" constant="60" id="i8C-K8-GDx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ghk-bH-EYU" secondAttribute="trailing" id="ten-RH-LNW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4549019608" green="0.62352941179999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qeI-ta-G6M" firstAttribute="leading" secondItem="lps-cZ-d2i" secondAttribute="leading" id="cmz-Cb-Gqf"/>
+                            <constraint firstAttribute="trailing" secondItem="qeI-ta-G6M" secondAttribute="trailing" id="wd3-s4-hsD"/>
+                            <constraint firstItem="qeI-ta-G6M" firstAttribute="top" secondItem="lps-cZ-d2i" secondAttribute="top" id="x2M-Da-K9N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IuL-aa-ygj"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutButton" destination="ius-9l-yyi" id="691-UD-tpH"/>
+                        <outlet property="bluetoothButton" destination="X2m-CD-Nad" id="4cy-Zp-E26"/>
+                        <outlet property="configureKeyboardButton" destination="7Fl-UW-Hge" id="SRC-e8-n7v"/>
+                        <outlet property="displayLabel" destination="NfJ-uI-9tS" id="zFR-vW-nhY"/>
+                        <outlet property="headsUpView" destination="CVm-dQ-nLB" id="dw1-vo-wxE"/>
+                        <outlet property="holdToggle" destination="Jod-4I-0RB" id="4TH-K0-AFF"/>
+                        <outlet property="keyboardContainerView" destination="Rxp-Ai-hgi" id="U6W-JM-Rgs"/>
+                        <outlet property="keyboardTopConstraint" destination="Duh-F6-3zd" id="CFW-BL-Vf5"/>
+                        <outlet property="keyboardView" destination="SHC-fX-ytr" id="cwc-Sj-DZw"/>
+                        <outlet property="mainButton" destination="FvE-DK-2G3" id="ELT-hC-ktG"/>
+                        <outlet property="midiLearnButton" destination="Uk8-fo-6eZ" id="vMG-jL-uBj"/>
+                        <outlet property="midiPanicButton" destination="bKO-N1-Grn" id="Kua-ZJ-4tN"/>
+                        <outlet property="modWheelPad" destination="IHt-hq-jlN" id="atO-G3-ZBt"/>
+                        <outlet property="moreButton" destination="do3-OE-Lqc" id="fSS-as-NSX"/>
+                        <outlet property="octaveStepper" destination="RZZ-OG-paK" id="8Om-lT-5dd"/>
+                        <outlet property="pitchPad" destination="qwm-Bv-eNx" id="tvQ-R6-CKx"/>
+                        <outlet property="saveButton" destination="NNq-BA-gw6" id="oef-AN-smi"/>
+                        <outlet property="settingsButton" destination="YnD-tW-fVL" id="0bM-SC-NeS"/>
+                        <outlet property="topContainerView" destination="AP3-Vb-cAn" id="uzT-nF-8c8"/>
+                        <outlet property="velocityButton" destination="MvP-wu-mhC" id="EVY-tP-lB9"/>
+                        <outlet property="wheelsButton" destination="d6J-hr-bha" id="kE7-89-lGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moa-lt-BCv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711.328125" y="-468.75"/>
+        </scene>
+        <!--Pop UpMOD Controller-->
+        <scene sceneID="vpt-C3-JAL">
+            <objects>
+                <viewController id="7o9-YU-BmX" customClass="PopUpMODController" customModule="AUv3_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qDc-bc-5rZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="nvl-ET-MxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lkv-xB-tZZ">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="340"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88e-sy-zYW">
+                                <rect key="frame" x="0.0" y="0.0" width="380" height="340"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dFv-YZ-sTZ">
+                                        <rect key="frame" x="22" y="84" width="336" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YJY-Ap-cK8">
+                                                <rect key="frame" x="0.0" y="30" width="336" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Vibrato"/>
+                                                    <segment title="Tremolo"/>
+                                                </segments>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="routingValueDidChange:" destination="7o9-YU-BmX" eventType="valueChanged" id="bGg-O4-PaP"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOD WHEEL DESTINATION:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZZ-Wc-pEA">
+                                                <rect key="frame" x="43" y="0.0" width="251" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArianLT-Bold" family="Arian LT" pointSize="16"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c43-7B-dhe">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOD / PITCH WHEELS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3a-yE-6Vr">
+                                                <rect key="frame" x="25" y="24" width="200" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-3x-5Rt">
+                                                <rect key="frame" x="291" y="24" width="75" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <state key="normal" title="DONE">
+                                                    <color key="titleColor" red="0.4549019608" green="0.62352941179999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButton:" destination="7o9-YU-BmX" eventType="touchUpInside" id="9Wz-ba-Wwl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gha-23-5lO">
+                                        <rect key="frame" x="0.0" y="173" width="380" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K48-Yd-FgX" customClass="Stepper" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="50" width="108" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upper Bounds:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm4-uM-Kem">
+                                                <rect key="frame" x="55" y="56" width="130" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArianLT-Regular" family="ArianLT-Regular" pointSize="16"/>
+                                                <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-NO-zoZ" customClass="Stepper" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="98" width="108" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lower Bounds:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUj-fG-rGl">
+                                                <rect key="frame" x="66" y="100" width="119" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArianLT-Regular" family="ArianLT-Regular" pointSize="16"/>
+                                                <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PITCH BEND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gd-kT-r9e">
+                                                <rect key="frame" x="129" y="18" width="112" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArianLT-Bold" family="Arian LT" pointSize="16"/>
+                                                <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="W0i-ZX-YfG"/>
+                                    <constraint firstAttribute="height" constant="340" id="jUi-x4-Epe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="88e-sy-zYW" firstAttribute="top" secondItem="qDc-bc-5rZ" secondAttribute="bottom" id="21d-9I-LIF"/>
+                            <constraint firstItem="88e-sy-zYW" firstAttribute="centerX" secondItem="Lkv-xB-tZZ" secondAttribute="centerX" id="V7W-sO-YjV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7GG-8b-5i4"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="380" height="360"/>
+                    <connections>
+                        <outlet property="bendLowerRangeStepper" destination="Ycb-NO-zoZ" id="cDQ-ju-hdb"/>
+                        <outlet property="bendUpperRangeStepper" destination="K48-Yd-FgX" id="4KS-b5-rpb"/>
+                        <outlet property="modWheelSegment" destination="YJY-Ap-cK8" id="bUs-Vk-fdm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeQ-h8-fSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="228"/>
+        </scene>
+        <!--Pop UpMIDI Controller-->
+        <scene sceneID="ZSU-M0-0dE">
+            <objects>
+                <viewController storyboardIdentifier="PopUpMIDIControllerAU" id="Cf4-mW-kO5" customClass="PopUpMIDIController" customModule="AUv3_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L0K-zz-bWA"/>
+                        <viewControllerLayoutGuide type="bottom" id="8US-Ld-O5P"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="wYZ-Fo-Mr3">
+                        <rect key="frame" x="0.0" y="0.0" width="660" height="310"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-ZG-U8v">
+                                <rect key="frame" x="0.0" y="500" width="301" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIDI Inputs:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhk-b7-Twk">
+                                        <rect key="frame" x="83" y="12" width="135" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.76470588240000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IMY-co-sfI">
+                                        <rect key="frame" x="15" y="41" width="258" height="108"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="gray" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MIDICell" id="iHe-wi-vH8" customClass="MIDICell" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="258" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iHe-wi-vH8" id="XFm-gz-qOR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="219" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIDI Input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eF3-NK-0sm" userLabel="Preset Label">
+                                                            <rect key="frame" x="26" y="12" width="185" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                            <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="eF3-NK-0sm" firstAttribute="centerY" secondItem="XFm-gz-qOR" secondAttribute="centerY" id="Q5J-2I-f9Z"/>
+                                                        <constraint firstItem="eF3-NK-0sm" firstAttribute="trailing" secondItem="XFm-gz-qOR" secondAttribute="trailingMargin" id="cb2-ng-jMy"/>
+                                                        <constraint firstItem="eF3-NK-0sm" firstAttribute="leading" secondItem="XFm-gz-qOR" secondAttribute="leadingMargin" constant="11" id="jeL-uL-sJv"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <color key="tintColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <outlet property="cellLabel" destination="eF3-NK-0sm" id="R2D-7O-D3e"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Cf4-mW-kO5" id="4n7-qU-nFG"/>
+                                            <outlet property="delegate" destination="Cf4-mW-kO5" id="tNG-81-721"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-dG-wAJ">
+                                <rect key="frame" x="0.0" y="400" width="300" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksa-YY-qns" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="69" width="235" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="MIDI Tips / Trouble Shooting">
+                                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-x4-H5T" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="660" height="310"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPK-xT-kjX" userLabel="Header View">
+                                        <rect key="frame" x="0.0" y="0.0" width="660" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIDI / Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-ST-eH6">
+                                                <rect key="frame" x="28" y="14" width="113" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIc-mo-iv5">
+                                                <rect key="frame" x="598" y="9" width="49" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
+                                                <state key="normal" title="DONE">
+                                                    <color key="titleColor" red="0.4549019608" green="0.62352941179999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButton:" destination="Cf4-mW-kO5" eventType="touchUpInside" id="IdB-TJ-ETN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="51" id="p0f-Z3-7aZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-dU-pNP" userLabel="Right Panel View">
+                                        <rect key="frame" x="311" y="52" width="349" height="258"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cBz-Vq-Alu">
+                                                <rect key="frame" x="70" y="49" width="244" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="32"/>
+                                                    <segment title="64"/>
+                                                    <segment title="128"/>
+                                                    <segment title="256"/>
+                                                    <segment title="512"/>
+                                                    <segment title="1024"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="bufferSizeChanged:" destination="Cf4-mW-kO5" eventType="valueChanged" id="TAg-nq-0Wj"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buffer Size:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFm-fr-EDa">
+                                                <rect key="frame" x="114" y="21" width="140" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Optimization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbB-YM-erP" customClass="RotatableLabel" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="-4" y="53" width="103" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="14"/>
+                                                <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rotation">
+                                                        <integer key="value" value="270"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Raise the buffer if you're hearing crackles." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB7-3I-5Uc">
+                                                <rect key="frame" x="59" y="153" width="242" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLh-FR-Vdo" userLabel="Left Panel View">
+                                        <rect key="frame" x="0.0" y="52" width="310" height="258"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background audio:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1f-UR-7Me">
+                                                <rect key="frame" x="53" y="214" width="140" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-JE-DFi" customClass="ToggleSwitch" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="210" width="49" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Always on / Don't sleep:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElG-4E-Gfk">
+                                                <rect key="frame" x="53" y="173" width="140" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZvH-jC-7He" customClass="ToggleSwitch" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="202" y="171" width="49" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6k-MV-kQP" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="38" y="114" width="235" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="Reset MIDI Learn Knobs">
+                                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIDI Learn Knobs:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYn-Mh-0x4">
+                                                <rect key="frame" x="85" y="87" width="135" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lZq-eO-edS" customClass="ChannelStepper" customModule="AUv3_Example" customModuleProvider="target">
+                                                <rect key="frame" x="99" y="36" width="108" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIDI Channel In: Omni" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CP8-TB-n3c">
+                                                <rect key="frame" x="85" y="10" width="135" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="310" id="gS0-aD-2Sp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nPK-xT-kjX" firstAttribute="top" secondItem="E3g-x4-H5T" secondAttribute="top" id="4oP-y2-6YX"/>
+                                    <constraint firstAttribute="bottom" secondItem="GLh-FR-Vdo" secondAttribute="bottom" id="7ms-mB-mg4"/>
+                                    <constraint firstAttribute="trailing" secondItem="nPK-xT-kjX" secondAttribute="trailing" id="9wp-yg-45z"/>
+                                    <constraint firstAttribute="width" constant="660" id="AKn-xE-PuM"/>
+                                    <constraint firstItem="bf2-dU-pNP" firstAttribute="top" secondItem="nPK-xT-kjX" secondAttribute="bottom" constant="1" id="DHK-FP-y1F"/>
+                                    <constraint firstItem="nPK-xT-kjX" firstAttribute="leading" secondItem="E3g-x4-H5T" secondAttribute="leading" id="FFF-m3-0NH"/>
+                                    <constraint firstAttribute="bottom" secondItem="bf2-dU-pNP" secondAttribute="bottom" id="XgE-XU-cAs"/>
+                                    <constraint firstItem="GLh-FR-Vdo" firstAttribute="leading" secondItem="E3g-x4-H5T" secondAttribute="leading" id="Y3R-I3-K4u"/>
+                                    <constraint firstAttribute="trailing" secondItem="bf2-dU-pNP" secondAttribute="trailing" id="a8C-J5-bh4"/>
+                                    <constraint firstItem="GLh-FR-Vdo" firstAttribute="top" secondItem="nPK-xT-kjX" secondAttribute="bottom" constant="1" id="gum-5d-Mzp"/>
+                                    <constraint firstItem="bf2-dU-pNP" firstAttribute="leading" secondItem="GLh-FR-Vdo" secondAttribute="trailing" constant="1" id="rtk-HY-tIn"/>
+                                </constraints>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-JL-PF3" customClass="SynthUIButton" customModule="AUv3_Example" customModuleProvider="target">
+                                <rect key="frame" x="374" y="340" width="235" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Restore Factory Presets">
+                                    <color key="titleColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E3g-x4-H5T" secondAttribute="bottom" id="7M4-sL-EcC"/>
+                            <constraint firstItem="E3g-x4-H5T" firstAttribute="centerX" secondItem="wYZ-Fo-Mr3" secondAttribute="centerX" id="EO8-Tc-vg0"/>
+                            <constraint firstItem="E3g-x4-H5T" firstAttribute="top" secondItem="L0K-zz-bWA" secondAttribute="bottom" id="FV8-Kq-TiN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iyb-Jo-wz2"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="660" height="330"/>
+                    <connections>
+                        <outlet property="backgroundAudioToggle" destination="gmQ-JE-DFi" id="O07-S1-8zM"/>
+                        <outlet property="bufferSizeSegmentedControl" destination="cBz-Vq-Alu" id="L6Q-Nv-9zB"/>
+                        <outlet property="channelLabel" destination="CP8-TB-n3c" id="FPv-jO-xTc"/>
+                        <outlet property="channelStepper" destination="lZq-eO-edS" id="zf7-sn-bKh"/>
+                        <outlet property="energyLabel" destination="s1f-UR-7Me" id="Fko-AK-cCG"/>
+                        <outlet property="inputTable" destination="IMY-co-sfI" id="g2L-vQ-wGy"/>
+                        <outlet property="midiTipsButton" destination="Ksa-YY-qns" id="4FS-RV-DWz"/>
+                        <outlet property="resetButton" destination="d6k-MV-kQP" id="aAQ-xu-wMb"/>
+                        <outlet property="restoreFactoryPresets" destination="FaM-JL-PF3" id="Up4-Oq-f4p"/>
+                        <outlet property="sleepToggle" destination="ZvH-jC-7He" id="JWF-kf-JRD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DX-C5-DAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1197" y="158"/>
+        </scene>
+        <!--Pop Up Key Settings Controller-->
+        <scene sceneID="ZFM-zN-DUL">
+            <objects>
+                <viewController id="2vL-NN-Oe9" customClass="PopUpKeySettingsController" customModule="AUv3_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kRH-yr-UoK"/>
+                        <viewControllerLayoutGuide type="bottom" id="hXB-rL-eMa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cdl-aq-hYU">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="386"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-Ft-utO">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="386"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5d-Gg-2b0">
+                                        <rect key="frame" x="0.0" y="0.0" width="420" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KEYBOARD SETTINGS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtV-68-nys">
+                                                <rect key="frame" x="31" y="14" width="135" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UJ-Ye-y4u">
+                                                <rect key="frame" x="365" y="14" width="38" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <state key="normal" title="DONE">
+                                                    <color key="titleColor" red="0.4549019608" green="0.62352941179999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButton:" destination="2vL-NN-Oe9" eventType="touchUpInside" id="rdU-qr-Ese"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oct Range:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQo-qQ-BbI">
+                                        <rect key="frame" x="63" y="272" width="81" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="hvi-Xh-p4t">
+                                        <rect key="frame" x="161" y="269" width="162" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.87058823529999996" green="0.90980392160000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="octaveRangeDidChange:" destination="2vL-NN-Oe9" eventType="valueChanged" id="gQa-cF-fpy"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="amV-Fl-Vv4">
+                                        <rect key="frame" x="161" y="319" width="162" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="None"/>
+                                            <segment title="Oct"/>
+                                            <segment title="All"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.87058823529999996" green="0.90980392160000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyLabelDidChange:" destination="2vL-NN-Oe9" eventType="valueChanged" id="pEf-2K-3jk"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Key Labels:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxc-4d-x0G">
+                                        <rect key="frame" x="64" y="323" width="80" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-67-ktA">
+                                        <rect key="frame" x="161" y="218" width="162" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="White"/>
+                                            <segment title="Dark"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.87058823529999996" green="0.90980392160000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="keyboardModeDidChange:" destination="2vL-NN-Oe9" eventType="valueChanged" id="hMM-qW-jQA"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Key Color:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u47-vT-ZXV">
+                                        <rect key="frame" x="64" y="222" width="80" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="16"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mockup_whitekeys" translatesAutoresizingMaskIntoConstraints="NO" id="Pyb-0m-yni">
+                                        <rect key="frame" x="20" y="20" width="380" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20067340140000001" green="0.2007081211" blue="0.20066580179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="x5e-LC-DTf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BCW-Ft-utO" firstAttribute="centerX" secondItem="Cdl-aq-hYU" secondAttribute="centerX" id="1c2-HR-d4F"/>
+                            <constraint firstItem="hXB-rL-eMa" firstAttribute="top" secondItem="BCW-Ft-utO" secondAttribute="bottom" id="3Ta-IZ-16U"/>
+                            <constraint firstItem="BCW-Ft-utO" firstAttribute="top" secondItem="kRH-yr-UoK" secondAttribute="bottom" id="dBe-Z6-GnD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="npb-y1-yWe"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="420" height="406"/>
+                    <connections>
+                        <outlet property="keyboardImage" destination="Pyb-0m-yni" id="MBR-9K-oUa"/>
+                        <outlet property="keyboardModeSegment" destination="N0d-67-ktA" id="bHP-L2-ydg"/>
+                        <outlet property="labelModeSegment" destination="amV-Fl-Vv4" id="eP4-ID-IJj"/>
+                        <outlet property="octaveRangeSegment" destination="hvi-Xh-p4t" id="OVe-Rv-8uw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="brh-iE-YHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717.1875" y="143.75"/>
+        </scene>
+        <!--Pop Up Velocity Controller-->
+        <scene sceneID="YhG-aG-tkO">
+            <objects>
+                <viewController id="BpL-Xj-nkV" userLabel="Pop Up Velocity Controller" customClass="PopUpVelocityController" customModule="AUv3_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Boi-cl-BLs"/>
+                        <viewControllerLayoutGuide type="bottom" id="n3S-1R-ON1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dnl-VA-IZX">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="310"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYl-0p-eyb" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="340" height="310"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jBj-SW-aSY">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VELOCITY OPTIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEK-OC-l3c">
+                                                <rect key="frame" x="24" y="28" width="192" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IT-7w-tE0">
+                                                <rect key="frame" x="270" y="22" width="56" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="16"/>
+                                                <state key="normal" title="DONE">
+                                                    <color key="titleColor" red="0.4549019608" green="0.62352941179999999" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="closeButton:" destination="BpL-Xj-nkV" eventType="touchUpInside" id="PRz-jp-hVj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUa-T5-J4T">
+                                        <rect key="frame" x="0.0" y="180" width="340" height="130"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On-screen Keyboard  Velocity:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5y-Vk-rgH">
+                                                <rect key="frame" x="47" y="9" width="246" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArianLT-Bold" family="Arian LT" pointSize="16"/>
+                                                <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="JeN-gT-beK">
+                                                <rect key="frame" x="62" y="37" width="216" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="Fixed"/>
+                                                    <segment title="Normal"/>
+                                                    <segment title="Inverted"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.87058823529999996" green="0.90980392160000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="velocityDidChange:" destination="BpL-Xj-nkV" eventType="valueChanged" id="t2T-dT-JeM"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keyboard will trigger higher velocities the further down you tap on a key " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCZ-gR-FRL">
+                                                <rect key="frame" x="25" y="74" width="291" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArianLT-Regular" family="ArianLT-Regular" pointSize="15"/>
+                                                <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="jiN-2U-4nF"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MIDI Input Velocity Curve:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hu-QN-wMe">
+                                        <rect key="frame" x="47" y="69" width="246" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArianLT-Bold" family="Arian LT" pointSize="16"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="w3K-kU-tph">
+                                        <rect key="frame" x="62" y="97" width="216" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Soft"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Hard"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.87058823529999996" green="0.90980392160000001" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="midiVelocityDidChange:" destination="BpL-Xj-nkV" eventType="valueChanged" id="Fxn-Ky-chy"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adjust the velocity handiling. Useful for some MIDI controllers." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1T-g0-zU4">
+                                        <rect key="frame" x="45" y="130" width="250" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArianLT-Regular" family="ArianLT-Regular" pointSize="15"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="P8w-tr-JAJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="SUa-T5-J4T" secondAttribute="bottom" id="ci6-Gh-yE9"/>
+                                    <constraint firstItem="SUa-T5-J4T" firstAttribute="leading" secondItem="WYl-0p-eyb" secondAttribute="leading" id="osP-j5-oip"/>
+                                    <constraint firstAttribute="trailing" secondItem="SUa-T5-J4T" secondAttribute="trailing" id="u8o-kZ-Liv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n3S-1R-ON1" firstAttribute="top" secondItem="WYl-0p-eyb" secondAttribute="bottom" id="HiG-Pe-fn7"/>
+                            <constraint firstItem="WYl-0p-eyb" firstAttribute="top" secondItem="Boi-cl-BLs" secondAttribute="bottom" id="Ztq-hk-Me1"/>
+                            <constraint firstItem="WYl-0p-eyb" firstAttribute="centerX" secondItem="Dnl-VA-IZX" secondAttribute="centerX" id="rQ0-aR-ilW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C35-eC-fpF"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="340" height="330"/>
+                    <connections>
+                        <outlet property="velocityDescriptionLabel" destination="SCZ-gR-FRL" id="zSf-SM-eMJ"/>
+                        <outlet property="velocitySegment" destination="JeN-gT-beK" id="2li-zO-dmL"/>
+                        <outlet property="velocityTaperSegment" destination="w3K-kU-tph" id="NU5-Xn-gCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pFt-Ms-VJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160" y="227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluetooth" width="13.5" height="18"/>
+        <image name="left-arrow" width="20" height="20"/>
+        <image name="loading" width="16" height="16"/>
+        <image name="mockup_whitekeys" width="409.5" height="307"/>
+        <image name="right-arrow" width="20" height="20"/>
+        <image name="saveDisk" width="20" height="20"/>
+        <image name="spark.png" width="64" height="64"/>
+    </resources>
+</document>

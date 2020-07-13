@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hMR-cP-18l">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Unit View Controller-->
+        <scene sceneID="SvJ-lk-39w">
+            <objects>
+                <viewController id="hMR-cP-18l" customClass="AudioUnitViewController" customModule="House_Mark_I_AU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUF-Ua-GoL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gic-Vu-g7l">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gic-Vu-g7l" firstAttribute="centerX" secondItem="lar-n2-M8c" secondAttribute="centerX" id="2ID-Ig-hwm"/>
+                            <constraint firstItem="gic-Vu-g7l" firstAttribute="height" secondItem="HUF-Ua-GoL" secondAttribute="height" id="8sk-cH-tjU"/>
+                            <constraint firstItem="gic-Vu-g7l" firstAttribute="width" secondItem="HUF-Ua-GoL" secondAttribute="width" id="XpJ-1J-YCh"/>
+                            <constraint firstItem="gic-Vu-g7l" firstAttribute="centerY" secondItem="lar-n2-M8c" secondAttribute="centerY" id="dcS-70-5zY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lar-n2-M8c"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="gic-Vu-g7l" id="s1F-7Y-RPp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTG-o0-1fv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67" y="1"/>
+        </scene>
+    </scenes>
+</document>
