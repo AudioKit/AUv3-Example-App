@@ -67,8 +67,6 @@ There are all kinds of filters, effects, and other audio manipulation classes in
 
 And, explore over [100+ playgrounds](http://audiokit.io/playgrounds/), created by the lovely & talented [Aure Prochazka](https://twitter.com/audiokitman). These byte size code playgrounds allow you to easily experiment with sound & code.
 
-You may also want to explore AU Lab, a free tool from Apple. It is available from the "more" section of the [Apple Developer portal](https://developer.apple.com/download/more/). As of this text, the current version is in the [Additional Tools for Xcode 9 package](https://download.developer.apple.com/Developer_Tools/Additional_Tools_for_Xcode_9/Additional_Tools_for_Xcode_9.dmg). 
-
 Additionally, these [docs and tips](https://developer.apple.com/library/content/technotes/tn2331/_index.html) will also prove valuable if you want to dive in at a deeper level than the AKSampler. 
 
 ## Making Graphics
