@@ -8,7 +8,7 @@ With this code, we hope to inspire the next generation of music app creators.
 ![](https://i.imgur.com/4O1erRv.png)
 
 
-This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** developement team was lead by [Jeff Cooper](mailto:jeff@audiokitpro.com) and [Matthew Fecher](https://twitter.com/analogMatthew).   
+This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** developement team was lead by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
 
 This repo is currently an Alpha WiP. Use at your own risk. 
 
@@ -39,7 +39,7 @@ If you're new to [AudioKit](https://audiokit.io/), you can learn more and view g
 **CocoaPods**  
 This repo uses CocoaPods to easily add AudioKit to your project. 
 
-Using the `Terminal` app in your mac, change directories to the folder that contains this project. The correct directory contains a file called `podfile`
+Using the `Terminal` app in your mac, change directories to the folder that contains this project. The correct directory contains a file called `Podfile`
 
 Run `pod install` from the command line. This will add AudioKit & AudioKit UI to project
 
@@ -118,7 +118,7 @@ The best thing to do is to create or sample your own custom instruments. General
 
 Huge thanks to all the beta testers and the folks on the AudioKit Slack Group, AudioBus Forum, & Facebook iOS Musician groups! Without your support and positive reviews, this would not be possible.
 
-The **AudioKit** developement team was lead by [Jeff Cooper](mailto:jeff@audiokitpro.com) and [Matthew Fecher](https://twitter.com/analogMatthew).   
+The **AudioKit** developement team was lead by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
 
 AudioKit Founder [Aure Prochazka](http://twitter.com/audiokitman)
 
