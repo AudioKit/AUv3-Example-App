@@ -15,7 +15,7 @@ class PresetConstants {
     static let favoritesBankDefaultName = "Favorites"
     static let initPresetName = "Init Preset"
     static let presetBanksFolder = "PresetBanks"
-    static let presetBankSuffix = "test.bank.json"
+    static let presetBankSuffix = "platinum.bank.json"
     static let presetsFolder = "Presets"
-    static let presetsSuffix = "test.preset.json"
+    static let presetsSuffix = "platinum.preset.json"
 }
