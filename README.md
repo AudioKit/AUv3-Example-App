@@ -31,7 +31,7 @@ This repo is currently an Alpha WiP. Use at your own risk.
 
 ## Getting Started
 
-![](https://i.imgur.com/EKwAq1Z.png)
+![](https://i.imgur.com/k807YHC.png)
 
 If you're new to [AudioKit](https://audiokit.io/), you can learn more and view getting started links: [here](https://audiokitpro.com/audiokit/).
 
@@ -57,7 +57,7 @@ If you are new to iOS development, I highly recommend the [Ray Wenderlich](https
 
 ## Included Sounds
 
-![](https://i.imgur.com/k807YHC.png)
+![](https://i.imgur.com/EKwAq1Z.png)
 
 This repo includes sounds [AnalogMatthew](https://twitter.com/analogMatthew) sampled from his TX81z hardware FM synthesizer for example purposes. Please use your own sounds in your app.
 
