@@ -8,9 +8,9 @@ With this code, we hope to inspire the next generation of music app creators.
 ![](https://i.imgur.com/4O1erRv.png)
 
 
-This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** developement team was lead by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
+This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** developement team was led by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
 
-This repo is currently an Alpha WiP. Use at your own risk. 
+This repo is currently an Alpha WIP. Use at your own risk. 
 
 ![](https://i.imgur.com/LUXE0tP.png)
 
@@ -85,8 +85,6 @@ Luckily, I've already included the coding part of handling knobs in this repo. Y
 
 ![knob in ib](https://i.imgflip.com/1svkul.gif)
 
-Or, if you want to just completely use graphics instead of code - 
-
 If you'd rather make knobs and controls with a graphic rendering software packgage that exports image frames (or a dedicated tool like KnobMan), here's some example code I wrote demonstrating using images to create knobs [here](https://github.com/analogcode/3D-Knobs).
 
 ![Knobs](http://audiokitpro.com/images/knob.gif) 
@@ -118,7 +116,7 @@ The best thing to do is to create or sample your own custom instruments. General
 
 Huge thanks to all the beta testers and the folks on the AudioKit Slack Group, AudioBus Forum, & Facebook iOS Musician groups! Without your support and positive reviews, this would not be possible.
 
-The **AudioKit** developement team was lead by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
+The **AudioKit** developement team was led by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
 
 AudioKit Founder [Aure Prochazka](http://twitter.com/audiokitman)
 
