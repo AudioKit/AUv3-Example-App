@@ -8,9 +8,13 @@ With this code, we hope to inspire the next generation of music app creators.
 ![](https://i.imgur.com/4O1erRv.png)
 
 
-This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** developement team was led by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
+This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** development team was led by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
 
-This repo is currently an Alpha WIP. Use at your own risk. 
+Watch Video: [GRAMMY-WINNERS BUILD APP WITH AUDIOKIT](https://youtu.be/4yKc_agIZl4)
+
+![](https://i.imgur.com/je05fC4.jpeg)
+
+This repo is currently a Beta WIP.  
 
 ![](https://i.imgur.com/LUXE0tP.png)
 
@@ -37,7 +41,7 @@ If you're new to [AudioKit](https://audiokit.io/), you can learn more and view g
 
 
 **CocoaPods**  
-This repo uses CocoaPods to easily add AudioKit to your project. 
+This repo branch uses CocoaPods to add AudioKit 4 to your project. If you're using a newer version of Xcode, you may need to add AudioKit 4 manually without using CocoaPods.
 
 Using the `Terminal` app in your mac, change directories to the folder that contains this project. The correct directory contains a file called `Podfile`
 
