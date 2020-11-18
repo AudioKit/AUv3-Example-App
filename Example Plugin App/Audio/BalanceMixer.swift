@@ -75,10 +75,4 @@ class BalanceMixer: AKNode, AKInput {
         input2Attentuator.volume = balance
     }
 
-    // Disconnect the node
-    override open func detach() {
-        AudioKit.detach(nodes: [mixer.avAudioUnitOrNode,
-                                input1Attenuator.avAudioUnitOrNode, input2Attentuator.avAudioUnitOrNode])
-    }
-
 }

@@ -25,10 +25,10 @@ public class ExampleApp_AudioUnit: AKAUv3ExtensionAudioUnit {
         AKSettings.sampleRate = AVAudioSession.sharedInstance().sampleRate
         AKSettings.disableAVAudioSessionCategoryManagement = true
         engine = AVAudioEngine()
-        AudioKit.engine = engine    // AudioKit.engine needs to be set early on
+        AKManager.engine = engine    // AudioKit.engine needs to be set early on
 
         conductor = Conductor()
-        AudioKit.output = conductor.exampleInstrument.output   // plug everything in once we have the engine
+        AKManager.output = conductor.exampleInstrument.output   // plug everything in once we have the engine
 
         do { //this is where the audio unit really starts firing up with the data it needs
             try engine.enableManualRenderingMode(.offline, format: AKSettings.audioFormat, maximumFrameCount: 4096)

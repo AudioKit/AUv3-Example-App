@@ -290,6 +290,20 @@
 			remoteGlobalIDString = FE37D82223C66299006B65D9;
 			remoteInfo = "Morehouse Mk I";
 		};
+		FEDA746025657287006281AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C42F35001C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		FEDA746225657287006281AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA7D07011F4E63C200707706;
+			remoteInfo = AudioKitUI;
+		};
 		FEFB0E1123CE3B57003A353D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FE37D7D523C5132E006B65D9 /* Project object */;
@@ -332,11 +346,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		330B4911479F886872D1F006 /* Pods-Morehouse Mark I.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morehouse Mark I.release.xcconfig"; path = "Target Support Files/Pods-Morehouse Mark I/Pods-Morehouse Mark I.release.xcconfig"; sourceTree = "<group>"; };
-		49CA75C45EE13BBDC46AC1C8 /* Pods-House Mark I AU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-House Mark I AU.release.xcconfig"; path = "Target Support Files/Pods-House Mark I AU/Pods-House Mark I AU.release.xcconfig"; sourceTree = "<group>"; };
 		5375025AA958A7E265174205 /* Pods-AU Plugin AU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AU Plugin AU.release.xcconfig"; path = "Target Support Files/Pods-AU Plugin AU/Pods-AU Plugin AU.release.xcconfig"; sourceTree = "<group>"; };
-		58F04CFB0953A3F5767B809C /* Pods-Morehouse Mk I.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morehouse Mk I.release.xcconfig"; path = "Target Support Files/Pods-Morehouse Mk I/Pods-Morehouse Mk I.release.xcconfig"; sourceTree = "<group>"; };
-		6222BCAA542F3F2778F40485 /* Pods-Morehouse Mark I.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morehouse Mark I.debug.xcconfig"; path = "Target Support Files/Pods-Morehouse Mark I/Pods-Morehouse Mark I.debug.xcconfig"; sourceTree = "<group>"; };
 		641710BD765FBB43B11F2EA0 /* Pods-AU Plugin AU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AU Plugin AU.debug.xcconfig"; path = "Target Support Files/Pods-AU Plugin AU/Pods-AU Plugin AU.debug.xcconfig"; sourceTree = "<group>"; };
 		68FD856782731374D0D6779A /* Pods_AU_Plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AU_Plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE78EE34B24A12E7A1E88DE /* Pods-AU Plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AU Plugin.release.xcconfig"; path = "Target Support Files/Pods-AU Plugin/Pods-AU Plugin.release.xcconfig"; sourceTree = "<group>"; };
@@ -431,10 +441,6 @@
 		94EB272123CEA4BA00069852 /* LFOPickerStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFOPickerStyleKit.swift; sourceTree = "<group>"; };
 		94EB279A23CEAC6B00069852 /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
 		94EB279E23CEAC8900069852 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
-		AE6F8EFBC3E6257ED79CD1B1 /* Pods-House Mark I.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-House Mark I.release.xcconfig"; path = "Target Support Files/Pods-House Mark I/Pods-House Mark I.release.xcconfig"; sourceTree = "<group>"; };
-		C2DC51608EC9C18A58DE5E5D /* Pods-House Mark I.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-House Mark I.debug.xcconfig"; path = "Target Support Files/Pods-House Mark I/Pods-House Mark I.debug.xcconfig"; sourceTree = "<group>"; };
-		D8D65AF5711FB64F1EEDAC29 /* Pods-Morehouse Mk I.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morehouse Mk I.debug.xcconfig"; path = "Target Support Files/Pods-Morehouse Mk I/Pods-Morehouse Mk I.debug.xcconfig"; sourceTree = "<group>"; };
-		E88BE26E827CF69BB228A0BE /* Pods-House Mark I AU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-House Mark I AU.debug.xcconfig"; path = "Target Support Files/Pods-House Mark I AU/Pods-House Mark I AU.debug.xcconfig"; sourceTree = "<group>"; };
 		FE0A56B123D66A8500330F1C /* ModwheelDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModwheelDestination.swift; sourceTree = "<group>"; };
 		FE0A56B423D66BF900330F1C /* MIDIByte+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MIDIByte+Extension.swift"; sourceTree = "<group>"; };
 		FE2027DA23E9D0C8008C7921 /* BalanceMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceMixer.swift; sourceTree = "<group>"; };
@@ -481,6 +487,7 @@
 		FEC4CD82244FA50800E9BF15 /* Conductor+Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conductor+Notifications.swift"; sourceTree = "<group>"; };
 		FEC4CD85244FAA3600E9BF15 /* Conductor+MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conductor+MIDI.swift"; sourceTree = "<group>"; };
 		FEC4CD8B244FAA9900E9BF15 /* MIDICCDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDICCDefinition.swift; sourceTree = "<group>"; };
+		FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "AudioKit/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = "<group>"; };
 		FEDB5D9323E0EC0F003DBE44 /* Parent+MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Parent+MIDI.swift"; sourceTree = "<group>"; };
 		FEDB7AFF245B6A0700D2EB29 /* Presets+CollectionCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presets+CollectionCellDelegate.swift"; sourceTree = "<group>"; };
 		FEDEC89A23EDF80600BBA730 /* PresetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetsManager.swift; sourceTree = "<group>"; };
@@ -531,14 +538,6 @@
 		8390CE2088F91D434900F855 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6222BCAA542F3F2778F40485 /* Pods-Morehouse Mark I.debug.xcconfig */,
-				330B4911479F886872D1F006 /* Pods-Morehouse Mark I.release.xcconfig */,
-				D8D65AF5711FB64F1EEDAC29 /* Pods-Morehouse Mk I.debug.xcconfig */,
-				58F04CFB0953A3F5767B809C /* Pods-Morehouse Mk I.release.xcconfig */,
-				C2DC51608EC9C18A58DE5E5D /* Pods-House Mark I.debug.xcconfig */,
-				AE6F8EFBC3E6257ED79CD1B1 /* Pods-House Mark I.release.xcconfig */,
-				E88BE26E827CF69BB228A0BE /* Pods-House Mark I AU.debug.xcconfig */,
-				49CA75C45EE13BBDC46AC1C8 /* Pods-House Mark I AU.release.xcconfig */,
 				7776315FA5F0FF0B47BBA3B8 /* Pods-AU Plugin.debug.xcconfig */,
 				6FE78EE34B24A12E7A1E88DE /* Pods-AU Plugin.release.xcconfig */,
 				641710BD765FBB43B11F2EA0 /* Pods-AU Plugin AU.debug.xcconfig */,
@@ -782,6 +781,7 @@
 		FE37D7D423C5132E006B65D9 = {
 			isa = PBXGroup;
 			children = (
+				FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */,
 				FE37D7DF23C5132E006B65D9 /* Example Plugin App */,
 				FE37D82423C66299006B65D9 /* Example Plugin App AU */,
 				FEFB0E0D23CE3B57003A353D /* ExampleApp Assets */,
@@ -938,6 +938,15 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		FEDA745C25657286006281AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA746125657287006281AE /* AudioKit.framework */,
+				FEDA746325657287006281AE /* AudioKitUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FEFB0E0D23CE3B57003A353D /* ExampleApp Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -1069,6 +1078,12 @@
 			mainGroup = FE37D7D423C5132E006B65D9;
 			productRefGroup = FE37D7DE23C5132E006B65D9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FEDA745C25657286006281AE /* Products */;
+					ProjectRef = FEDA745B25657286006281AE /* AudioKit For iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FE37D7DC23C5132E006B65D9 /* AU Plugin */,
@@ -1077,6 +1092,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FEDA746125657287006281AE /* AudioKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKit.framework;
+			remoteRef = FEDA746025657287006281AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FEDA746325657287006281AE /* AudioKitUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKitUI.framework;
+			remoteRef = FEDA746225657287006281AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FE37D7DB23C5132E006B65D9 /* Resources */ = {
@@ -1696,7 +1728,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 641710BD765FBB43B11F2EA0 /* Pods-AU Plugin AU.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_ENTITLEMENTS = "Example Plugin App AU/Example App AU.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1742,7 +1773,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5375025AA958A7E265174205 /* Pods-AU Plugin AU.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_ENTITLEMENTS = "Example Plugin App AU/Example App AU.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;

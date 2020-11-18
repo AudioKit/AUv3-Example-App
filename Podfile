@@ -4,7 +4,6 @@
 use_frameworks!
 
 def available_pods
-  pod 'AudioKit', '=4.10.1'
   pod 'Disk'
 end
 

@@ -115,14 +115,14 @@ class ParentController: UIViewController {
         deboog("Standalone VC didLoad")
 
         #if Standalone
-        if AudioKit.engine.isRunning {
-            try? AudioKit.stop() //just being thorough
+        if AKManager.engine.isRunning {
+            try? AKManager.stop() //just being thorough
         }
-        AKSettings.sampleRate = AudioKit.deviceSampleRate // important
+        AKSettings.sampleRate = AKManager.deviceSampleRate // important
         if conductor == nil {
             conductor = Conductor()
         }
-        AudioKit.output = conductor?.exampleInstrument.output
+        AKManager.output = conductor?.exampleInstrument.output
         conductor?.setSession()
         conductor?.startEngine()
         conductor?.midi.addListener(self)

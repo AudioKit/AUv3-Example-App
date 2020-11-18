@@ -13,7 +13,7 @@ class Conductor {
 
     let uid = UUID().uuidString
     var exampleInstrument = ExampleInstrument()
-    var midi = AudioKit.midi
+    var midi = AKManager.midi
     var testOsc = AKOscillator(waveform: AKTable(.square))
     var audioQueue = DispatchQueue.init(label: "audioQueue")
     var parameterTree = AUParameterTree()
@@ -299,15 +299,11 @@ class Conductor {
     }
     
     func startEngine() {
-//        audioQueue.async {
-            try? AudioKit.start()
-//        }
+        try? AKManager.start()
     }
 
     func stopEngine() {
-//        audioQueue.async {
-            try? AudioKit.stop()
-//        }
+        try? AKManager.stop()
     }
 
     func setModwheel(_ value: MIDIByte) {
@@ -327,7 +323,7 @@ class Conductor {
 
     @objc func sleepIfNeeded() {
         if !backgroundAudioEnabled {
-            try? AudioKit.stop()
+            try? AKManager.stop()
             try? AVAudioSession.sharedInstance().setActive(false)
             isSleeping = true
         }
@@ -335,7 +331,7 @@ class Conductor {
 
     @objc func wakeIfNeeded() {
         if isSleeping {
-            try? AudioKit.start()
+            try? AKManager.start()
             try? AKSettings.setSession(category: .playback)
             try? AVAudioSession.sharedInstance().setActive(true)
             isSleeping = false
