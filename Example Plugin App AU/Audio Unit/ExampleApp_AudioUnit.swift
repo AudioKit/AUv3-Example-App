@@ -81,24 +81,32 @@ public class ExampleApp_AudioUnit: AKAUv3ExtensionAudioUnit {
         return true
     }
 
+    private let appStateKey = "appStatePreset"
+    private let lastLoadedPresetKey = "lastLoadedPreset"
+
     override public var fullState: [String : Any]? {
         get {
-            deboog("accessing fullstate")
-            return conductor.allParameters.reduce(into: [String : Any]()) { $0[$1.identifier] = $1.value }
+            var stateDictionary = [String : Any]()
+            let preset = InstrumentPreset(conductor: conductor, name: "appState")
+            if let presetDict = preset.dictionary {
+                stateDictionary.updateValue(presetDict, forKey: appStateKey)
+            }
+            if let currentPreset = conductor.currentPreset, let currentPresetDict = currentPreset.dictionary {
+                stateDictionary.updateValue(currentPresetDict, forKey: lastLoadedPresetKey)
+            }
+            return stateDictionary
         }
         set {
-            deboog("setting fullstate")
-        }
-    }
-
-    override public var fullStateForDocument: [String : Any]? {
-        get {
-            deboog("accessing fullStateForDocument")
-            let presetField = [ "currentPreset" : conductor.currentPreset?.position as Any ]
-            return presetField
-        }
-        set {
-            deboog("setting fullstate for document")
+            guard let dictionary = newValue else { return }
+            var statePreset: InstrumentPreset
+            if let appStatePresetDictionary = dictionary[appStateKey] as? [String : Any] { //newer presets save this info in a field
+                statePreset = InstrumentPreset(dictionary: appStatePresetDictionary)
+                conductor.loadPreset(statePreset)
+            }
+            if let loadedPresetDict = dictionary[lastLoadedPresetKey] as? [String :Any] {
+                let lastLoadedPreset = InstrumentPreset(dictionary: loadedPresetDict)
+                conductor.setPresetWithoutLoading(presetUID: lastLoadedPreset.uid)
+            }
         }
     }
 
