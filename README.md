@@ -7,16 +7,13 @@ With this code, we hope to inspire the next generation of music app creators.
 
 ![](https://i.imgur.com/4O1erRv.png)
 
+This project was created with Award-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** development team was led by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
 
-This project was created with Grammy-winning professors *Kennard Garrett* & *Henny tha Bizness* at historic **Morehouse College's** music tech department. The **AudioKit** development team was led by [Jeff Cooper](http://github.com/eljeff) and [Matthew Fecher](https://twitter.com/analogMatthew).   
-
-Watch Video: [GRAMMY-WINNERS BUILD APP WITH AUDIOKIT](https://youtu.be/4yKc_agIZl4)
+Watch Video: [PLATINUM SELLING PRODUCERS & STUDENTS BUILD APP WITH AUDIOKIT](https://youtu.be/4yKc_agIZl4)
 
 ![](https://i.imgur.com/je05fC4.jpeg)
 
 This repo is currently a Beta WIP.  
-
-![](https://i.imgur.com/LUXE0tP.png)
 
 ## Code Features
 
