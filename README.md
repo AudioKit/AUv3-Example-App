@@ -1,6 +1,6 @@
 # **AudioKit AUv3 Plugin & Stand-alone Example**
 
-[![License](https://img.shields.io/cocoapods/l/AudioKit.svg?style=flat)](https://github.com/AudioKit/ROMPlayer/blob/master/LICENSE)
+[![License](https://img.shields.io/cocoapods/l/AudioKit.svg?style=flat)](https://github.com/AudioKit/AUv3-Example-App/blob/master/LICENSE)
 [![Twitter Follow](https://img.shields.io/twitter/follow/AudioKitPro.svg?style=social)](http://twitter.com/AudioKitPro)
 
 With this code, we hope to inspire the next generation of music app creators. 
